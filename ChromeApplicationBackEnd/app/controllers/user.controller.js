@@ -92,21 +92,6 @@ exports.getSubscriberById = (req, res) => {
   });
 };
 
-exports.getSubscriberByEmail = (req, res) => {
-  let email = req.params.email;
-  User.findOne({ email }, (err, user) => {
-    if (err) {
-      res.status(500).send({ message: err });
-      return;
-    }
-
-    if (!user) {
-      res.status(500).send({ message: "No user found" });
-    }
-    res.status(200).send(user);
-  });
-};
-
 exports.registerNewCtechSubscriber = async (req, res) => {
   // req.body.isApproved = false;
   req.body.isAdmin = false;
