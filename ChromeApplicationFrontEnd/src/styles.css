@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+.modal-backdrop{
+    z-index: 1050!important;
+ }
+
+ body {
+	margin-left: 20px;
+	margin-right:20px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	background-color: #FFF;
+}
+td {
+    padding: 5px;
+    font-weight: 500;
+}
+div#container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    padding-top: 20px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.textbox {
+	font-family:Verdana, Geneva, sans-serif;
+	color:#333;
+	background-color:#F0F0F0;
+	padding:4px 4px 4px 4px;
+	width:350px;
+	border:solid 1px #999;
+}
+.button{
+	color:#000000;
+    width:auto;
+	height:30px;
+    overflow:visible;
+	border:solid 1px #999;
+}
+.mandatory{
+	color:#FF0000;
+	font-size:bold;
+}
+div#err_txtname, #err_txtcompany, #err_email, #err_txttelno, #err_txtcity {
+	color:#FF0000;
+}
